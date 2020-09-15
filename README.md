@@ -1,7 +1,9 @@
 # Week 3 - Spatial Databases, Part II
 
 * [Homework](#Homework)
-* [Lecture](#Lecture)
+* Lecture
+  - [Side Deck](https://docs.google.com/presentation/d/1EovplVMnKfdNlxtVx7JJZJsE8f5BJyg_yd6VPTKj9L8/edit?usp=sharing)
+  - [Code snippets](#Lecture)
 * Lab - will be posted soon
 
 ## Homework
@@ -12,7 +14,6 @@
 
 ## Lecture
 
-[Side Deck](https://docs.google.com/presentation/d/1EovplVMnKfdNlxtVx7JJZJsE8f5BJyg_yd6VPTKj9L8/edit?usp=sharing)
 
 ### PostGIS Examples
 

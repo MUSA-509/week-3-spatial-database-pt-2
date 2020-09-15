@@ -1,5 +1,9 @@
 # Week 3 - Spatial Databases, Part II
 
+* [Homework](#Homework)
+* [Lecture](#Lecture)
+* Lab - will be posted soon
+
 ## Homework
 
 * SQL practice at codecademy:
@@ -7,6 +11,8 @@
   - [Multiple Tables](https://www.codecademy.com/courses/learn-sql/lessons/multiple-tables/)
 
 ## Lecture
+
+[Side Deck](https://docs.google.com/presentation/d/1EovplVMnKfdNlxtVx7JJZJsE8f5BJyg_yd6VPTKj9L8/edit?usp=sharing)
 
 ### PostGIS Examples
 

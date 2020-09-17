@@ -71,10 +71,10 @@ For example, from our lecture we saw a join with Indego data that allows us to c
 
 ```SQL
 SELECT
-  t.start_station,
-  t.duration,
-  t.start_time,
-  t.end_time,
+  trips.start_station,
+  trips.duration,
+  trips.start_time,
+  trips.end_time,
   stations.the_geom,
   stations.id,
   stations.name
@@ -85,6 +85,12 @@ JOIN andyepenn.indego_station_status AS stations
 
 
 **1. Write a query that matches the Census Block Group Polygons to the SafeGraph dataset**
+
+What column can we use to match between the two tables?
+
+In this query, have the following columns in the `SELECT`:
+* From the block group dataset: `the_geom`, `total_pop_2010`, `geoid`
+* From the SafeGraph dataset:  `median_dwell`, `distance_from_primary_daytime_location`, `distance_from_home`, `raw_device_counts`, `raw_stop_counts`
 
 ```SQL
 -- fill in your query here

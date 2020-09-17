@@ -89,7 +89,7 @@ JOIN andyepenn.indego_station_status AS stations
 What column can we use to match between the two tables?
 
 In this query, have the following columns in the `SELECT`:
-* From the block group dataset: `the_geom`, `total_pop_2010`, `geoid`
+* From the block group dataset, select all of the columns. If you give this dataset an alias of `c`, you can select all of its columns with `c.*` in the `SELECT` clause.
 * From the SafeGraph dataset:  `median_dwell`, `distance_from_primary_daytime_location`, `distance_from_home`, `raw_device_counts`, `raw_stop_counts`
 
 ```SQL

@@ -17,12 +17,12 @@ Download here: https://desktop.github.com/
 
 ### 1. Census block groups of Philadelphia County
 
-**Dataset link:** `TBD`
+**Dataset link:** `https://raw.githubusercontent.com/MUSA-509/week-3-spatial-database-pt-2/master/data/philadelphia_cbgs_w_population.geojson`
 
 This dataset contains polygon geometries for Philadelphia County (FIPS 42101). The data originally came from [TIGER/Line with Selected Demographic and Economic Data](https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html) but reduced to only population, geoid, and geometry. The full dataset has hundreds of census variables.
 
 ![](images/philadelphia-cbgs.png)
-/Users/petereschbacher/Documents/GitHub/week-3-spatial-database-pt-2
+
 Block Groups (per [US Census](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_4))
 
 > Block Groups (BGs) are statistical divisions of census tracts, are generally defined to contain between 600 and 3,000 people, and are used to present data and control block numbering.  A block group consists of clusters of blocks within the same census tract that have the same first digit of their four-digit census block number.  For example, blocks 3001, 3002, 3003, . . ., 3999 in census tract 1210.02 belong to BG 3 in that census tract.
@@ -34,11 +34,13 @@ The two most important columns in this dataset for us are:
 
 ### 2. SafeGraph Neighborhood Patterns (see link on Canvas for download)
 
-**Dataset link:** `TBD`
+**Dataset link:** `https://canvas.upenn.edu/courses/1533813/files/88443879/download?download_frd=1`
 
 More on [SafeGraph Neighborhood Patterns](https://docs.safegraph.com/docs/neighborhood-patterns-2020).
 
 There's a lot to unpack here. First, notice that the dataset doesn't have explicit geospatial data. It has the Census Block Group ID, though. If only we could match that to a geometry...
+
+Other columns we will use in class:
 
   * `median_dwell`: Median dwell time in minutes. Note that we are only including stops that have a dwell of at least 1 minute.
   * `distance_from_primary_daytime_location`: Median distance from device_daytime_areas traveled to the stopping point(s) within the area by devices from their device_daytime_area (of devices whose device_daytime_area we have identified) in meters.
@@ -119,3 +121,7 @@ Spatial JOINs are similar to standard joins but we explicitly use spatial inform
 If you want to put your data on a map, you will need to include `cartodb_id`, `the_geom`, and `the_geom_webmercator` in the outer-most SELECT.
 
 **5. We're probably double counting some of the block groups because some of the buildings probably intersect more than one block group. Turn your buildings into points and then do the intersection.**
+
+```SQL
+-- fill in your query here
+```

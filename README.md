@@ -9,9 +9,14 @@
 
 ## Homework
 
+All homework items are optional but strongly encouraged.
+
 * SQL practice at codecademy:
   - [Aggregate Functions](https://www.codecademy.com/courses/learn-sql/lessons/aggregate-functions)
   - [Multiple Tables](https://www.codecademy.com/courses/learn-sql/lessons/multiple-tables/)
+* PostGIS tutorials
+  - Spatial Relationships: [reading](https://postgis.net/workshops/postgis-intro/spatial_relationships.html) and [exercises](https://postgis.net/workshops/postgis-intro/spatial_relationships_exercises.html)
+  - Spatial Joins: [reading](https://postgis.net/workshops/postgis-intro/spatial_relationships.html) and [exercises](https://postgis.net/workshops/postgis-intro/joins_exercises.html)
 
 ## Lecture
 

@@ -5,6 +5,7 @@
   - [Slide Deck](https://docs.google.com/presentation/d/1EovplVMnKfdNlxtVx7JJZJsE8f5BJyg_yd6VPTKj9L8/edit?usp=sharing)
   - [Code snippets](#Lecture)
 * Lab - will be posted soon
+* [Recommended Reading](#recommended-reading)
 
 ## Homework
 
@@ -13,7 +14,6 @@
   - [Multiple Tables](https://www.codecademy.com/courses/learn-sql/lessons/multiple-tables/)
 
 ## Lecture
-
 
 ### PostGIS Examples
 
@@ -127,3 +127,9 @@ FROM (
   ) as _w
 GROUP BY 1, 2, 3, 4
 ```
+
+## Recommended Reading
+
+* [Geography type](https://postgis.net/workshops/postgis-intro/geography.html)
+* [PostGIS Geometry Returning Functions](https://postgis.net/workshops/postgis-intro/geometry_returning.html)
+* [SafeGraph Patterns blog post](https://carto.com/blog/visit-pattern-footfall-data-safegraph/) -- skip the first couple of paragraphs ;)

@@ -96,6 +96,26 @@ _Remember that ST_Area(geography) returns an answer in square meters._
 -- fill in your query here
 ```
 
-**3. **
+**3. Include a new column in the previous query that is the raw device count per population.**
+
+_You will need the PostgreSQL function [`nullif`](https://www.postgresql.org/docs/12/functions-conditional.html#FUNCTIONS-NULLIF) in the denominator. This function returns null if the first argument matches the second, and the value of the first argument otherwise. In this case, a null is returned if `colname` is 0: `nullif(colname, 0)`. This is useful to avoid division by zero problems._
 
 ## Spatial Joins
+
+Spatial JOINs are similar to standard joins but we explicitly use spatial information in the join matching condition. There are several PostGIS functions that return true/false values. Here is a sample:
+
+* ST_DWithin - are geometries g1 and g2 within d distance of one another?
+* ST_Intersects - do geometries g1 and g2 have any overlap?
+* ST_Disjoint - do the geometries _not_ intersect?
+* ST_Touches - do the geometry borders touch?
+* ST_Equals - is geometry g1 equal to g2?
+
+**4. Using the OSM buildings dataset from last week, find all census block groups that intersect with these buildings.**
+
+```SQL
+-- fill in your query here
+```
+
+If you want to put your data on a map, you will need to include `cartodb_id`, `the_geom`, and `the_geom_webmercator` in the outer-most SELECT.
+
+**5. We're probably double counting some of the block groups because some of the buildings probably intersect more than one block group. Turn your buildings into points and then do the intersection.**

@@ -1,6 +1,6 @@
 # Week 3 - Spatial Databases, Part II
 
-* [Homework (optional)](#Homework)
+* [Homework (not graded)](#Homework)
 * Lecture
   - [Slide Deck](https://docs.google.com/presentation/d/1EovplVMnKfdNlxtVx7JJZJsE8f5BJyg_yd6VPTKj9L8/edit?usp=sharing)
   - [Code snippets](#Lecture)
@@ -15,6 +15,7 @@ All homework items are optional but strongly encouraged.
   - [Aggregate Functions](https://www.codecademy.com/courses/learn-sql/lessons/aggregate-functions)
   - [Multiple Tables](https://www.codecademy.com/courses/learn-sql/lessons/multiple-tables/)
 * PostGIS tutorials
+  - Import the datasets into your Carto account. See [Getting Started](https://postgis.net/workshops/postgis-intro/#getting-started) section for data download. You can just import this zip file into your carto account.
   - Spatial Relationships: [reading](https://postgis.net/workshops/postgis-intro/spatial_relationships.html) and [exercises](https://postgis.net/workshops/postgis-intro/spatial_relationships_exercises.html)
   - Spatial Joins: [reading](https://postgis.net/workshops/postgis-intro/spatial_relationships.html) and [exercises](https://postgis.net/workshops/postgis-intro/joins_exercises.html)
 

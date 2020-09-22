@@ -11,7 +11,7 @@
 
 If you're not comfortable with the command line, [GitHub Desktop](https://desktop.github.com/) is a good way to use GitHub.
 
-Download here: https://desktop.github.com/
+Download here: https://desktop.github.com
 
 ## Datasets
 

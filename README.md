@@ -4,7 +4,9 @@
 * Lecture
   - [Slide Deck](https://docs.google.com/presentation/d/1EovplVMnKfdNlxtVx7JJZJsE8f5BJyg_yd6VPTKj9L8/edit?usp=sharing)
   - [Code snippets](#Lecture)
-* [Lab](Lab.md)
+*
+  - [Lab](Lab.md) - without answers
+  - [Answers][Lab-answers.md] - with answers, including a new question (\#6)
 * [Recommended Reading](#recommended-reading)
 
 ## Homework

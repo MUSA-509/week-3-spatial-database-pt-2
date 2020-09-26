@@ -131,3 +131,10 @@ If you want to put your data on a map, you will need to include `cartodb_id`, `t
 ```SQL
 -- fill in your query here
 ```
+**6. NEW: Which building(s) are in more than one census block group?**
+
+```SQL
+-- fill in your query here
+```
+
+![](images/spanning-census-blocks.png)

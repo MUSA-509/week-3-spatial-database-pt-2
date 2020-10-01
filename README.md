@@ -72,13 +72,13 @@ FROM (
 ```SQL
 SELECT the_geom, ST_Transform(the_geom, 3857) as the_geom_webmercator, row_number() over() as cartodb_id
 FROM (
-  SELECT ST_Intersection(o.the_geom, b.the_geom) as the_geom
+  SELECT ST_Intersection(o.the_geom, b.g) as the_geom
   FROM (
       SELECT ST_Buffer(the_geom::geography, 25)::geometry as g, cartodb_id
       FROM andyepenn.university_city_osm_buildings
   ) as b
   JOIN andyepenn.university_city_osm_buildings as o
-  ON ST_Intersects(o.the_geom, b.the_geom) and o.cartodb_id <> b.cartodb_id
+  ON ST_Intersects(o.the_geom, b.g) and o.cartodb_id <> b.cartodb_id
 ) as _abc
 ```
 

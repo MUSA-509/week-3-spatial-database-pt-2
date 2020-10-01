@@ -74,11 +74,8 @@ SELECT the_geom, ST_Transform(the_geom, 3857) as the_geom_webmercator, row_numbe
 FROM (
   SELECT ST_Intersection(o.the_geom, b.the_geom) as the_geom
   FROM (
-    SELECT ST_Transform(g, 3857) as the_geom_webmercator, g as the_geom, cartodb_id
-    FROM (
       SELECT ST_Buffer(the_geom::geography, 25)::geometry as g, cartodb_id
       FROM andyepenn.university_city_osm_buildings
-    ) _w
   ) as b
   JOIN andyepenn.university_city_osm_buildings as o
   ON ST_Intersects(o.the_geom, b.the_geom) and o.cartodb_id <> b.cartodb_id
